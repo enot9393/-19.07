@@ -408,7 +408,7 @@
         function createHeart() {
             const heart = document.createElement('div');
             heart.className = 'heart';
-            heart.innerHTML = ['♥', '💕', '💗'][Math.floor(Math.random() * 4)];
+            heart.innerHTML = ['♥', '💕', '💗'][Math.floor(Math.random() * 3)];
             heart.style.left = Math.random() * 100 + 'vw';
             heart.style.animationDuration = (Math.random() * 3 + 6) + 's';
             heart.style.animationDelay = Math.random() * 2 + 's';
@@ -423,4 +423,5 @@
     </script>
 </body>
 </html>
+
 
