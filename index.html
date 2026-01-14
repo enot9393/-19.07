@@ -375,7 +375,7 @@
     <script>
         // Обратный отсчет до 15 августа 2026 11:00
         function updateCountdown() {
-            const weddingDate = new Date('2026-08-15T11:00:00').getTime();
+            const weddingDate = new Date('2026-08-08T11:00:00').getTime();
             const now = new Date().getTime();
             const distance = weddingDate - now;
             
@@ -408,7 +408,7 @@
         function createHeart() {
             const heart = document.createElement('div');
             heart.className = 'heart';
-            heart.innerHTML = ['♥', '💕', '💖', '💗'][Math.floor(Math.random() * 4)];
+            heart.innerHTML = ['♥', '💕', '💗'][Math.floor(Math.random() * 4)];
             heart.style.left = Math.random() * 100 + 'vw';
             heart.style.animationDuration = (Math.random() * 3 + 6) + 's';
             heart.style.animationDelay = Math.random() * 2 + 's';
@@ -423,3 +423,4 @@
     </script>
 </body>
 </html>
+
