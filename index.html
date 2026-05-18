@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Венчание Антон и Варвара</title>
+  <title>Венчание Антон и Варвара ✨</title>
   <style>
     * {
       margin: 0;
@@ -15,7 +15,7 @@
     body {
       background: linear-gradient(-45deg, #fff5fb, #fde8f2, #f9dcf0, #ffe8f5);
       background-size: 400% 400%;
-      animation: gradientBG 25s ease infinite;
+      animation: gradientBG 20s ease infinite;
       color: #333;
       line-height: 1.6;
       min-height: 100vh;
@@ -36,27 +36,18 @@
       height: 18px;
       opacity: 0.45;
       pointer-events: none;
-      animation: floatFlower 8s ease-in-out infinite;
+      animation: floatFlower 6s ease-in-out infinite;
     }
     .flower:nth-child(2n)  { animation-delay: 1.5s; opacity: 0.4; }
     .flower:nth-child(3n)  { animation-delay: 3s;   opacity: 0.35; }
     .flower:nth-child(4n)  { animation-delay: 0.5s; opacity: 0.5; }
 
     @keyframes floatFlower {
-      0% {
+      0%, 100% {
         transform: translateY(0) rotate(0deg);
-      }
-      25% {
-        transform: translateY(-15px) rotate(10deg);
       }
       50% {
-        transform: translateY(0) rotate(0deg);
-      }
-      75% {
-        transform: translateY(12px) rotate(-10deg);
-      }
-      100% {
-        transform: translateY(0) rotate(0deg);
+        transform: translateY(-10px) rotate(10deg);
       }
     }
 
@@ -83,17 +74,17 @@
 
     header {
       text-align: center;
-      padding: 40px 0;
+      padding: 25px 0 15px;
       background: rgba(255, 252, 255, 0.95);
       border-radius: 16px;
       margin-bottom: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
     header h1 {
       font-size: 2.4rem;
-      font-weight: 500;
+      font-weight: 600;
       color: #e8a4d1;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     header p {
       font-size: 1.1rem;
@@ -105,15 +96,15 @@
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     .portrait {
       text-align: center;
       max-width: 280px;
     }
     .portrait img {
-      width: 180px;
-      height: 180px;
+      width: 170px;
+      height: 170px;
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid #ffdeef;
@@ -123,68 +114,68 @@
       margin-top: 10px;
       font-size: 1.3rem;
       color: #e8a4d1;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .about {
       background: rgba(255, 255, 255, 0.95);
-      padding: 25px 30px;
+      padding: 25px 20px;
       border-radius: 16px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
     .about p {
       font-size: 1.1rem;
       color: #7a6a62;
     }
+    .about p strong {
+      color: #e8a4d1;
+    }
 
-    /* Блок обратного отсчёта */
+    /* Блок обратного отсчёта в одну строку */
     .countdown {
-      background: rgba(255, 252, 255, 0.95);
-      padding: 25px 20px;
+      background: linear-gradient(45deg, #f9c4e0, #fde8f2);
+      padding: 20px 15px;
       border-radius: 16px;
       margin-bottom: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 12px rgba(232, 164, 209, 0.2);
       text-align: center;
     }
     .countdown h2 {
-      margin-bottom: 15px;
-      color: #e8a4d1;
-      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      color: #d46d9e;
+      font-weight: 600;
     }
     .countdown-time {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      align-items: baseline;
+      gap: 6px;
       flex-wrap: wrap;
+      color: #e8a4d1;
+      font-size: 1.3rem;
+      font-weight: 600;
     }
     .countdown-item {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-width: 80px;
+      gap: 4px;
     }
     .countdown-item .value {
-      font-size: 2rem;
-      font-weight: 600;
       color: #e8a4d1;
-    }
-    .countdown-item .label {
-      font-size: 0.85rem;
-      color: #a86b87;
-      margin-top: 5px;
     }
     .countdown-finished {
-      color: #e8a4d1;
+      color: #d46d9e;
       font-size: 1.1rem;
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
     .schedule {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     .schedule h2 {
-      font-size: 1.6rem;
-      margin-bottom: 15px;
+      font-size: 1.5rem;
+      margin-bottom: 12px;
       color: #e8a4d1;
       text-align: center;
     }
@@ -216,7 +207,7 @@
 
     .form-section {
       background: rgba(255, 252, 255, 0.95);
-      padding: 30px;
+      padding: 25px 20px;
       border-radius: 16px;
       text-align: center;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -225,10 +216,11 @@
       font-size: 1.5rem;
       color: #e8a4d1;
       margin-bottom: 12px;
+      font-weight: 600;
     }
     .form-section p {
       color: #c995b8;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
     .form-btn {
       display: inline-block;
@@ -248,9 +240,9 @@
     }
 
     .footer {
-      margin-top: 40px;
+      margin-top: 30px;
       text-align: center;
-      padding: 20px 0;
+      padding: 15px 0;
       color: #c995b8;
       font-size: 0.9rem;
     }
@@ -262,51 +254,38 @@
 
   <div class="container">
     <header>
-      <h1>Антон &amp; Варвара</h1>
-      <p>Приглашаем вас разделить с нами этот особенный день</p>
+      <h1>💌 Антон &amp; Варвара</h1>
+      <p>Приглашаем вас разделить с нами этот особенный день 💖</p>
     </header>
 
     <div class="couple">
       <div class="portrait">
         <img src="photo.jpg" alt="Антон" />
-        <h3>Антон</h3>
+        <h3>Антон 👨🏻</h3>
       </div>
       <div class="portrait">
         <img src="photo2.jpg" alt="Варвара" />
-        <h3>Варвара</h3>
+        <h3>Варвара 👩🏻</h3>
       </div>
     </div>
 
     <div class="about">
       <p>
-        Мы мечтали о простом, но очень тёплом и искреннем дне — 
+        Мы мечтали о простом, но очень тёплом и искреннем дне</strong> — 
         чтобы рядом были вы, тех, кого мы особенно ценим. 
-        Венчание — для нас не просто ритуал, 
-        а начало нашей общей жизни, которую мы хотим наполнить 
-        вашей любовью и поддержкой.
+        Венчание — для нас это начало нашей общей жизни, которую мы хотим наполнить 
+        вашей любовью и поддержкой. 💞
       </p>
     </div>
 
-    <!-- Блок обратного отсчёта до 19.07.2026 12:00 -->
+    <!-- Блок обратного отсчёта в одну строку -->
     <div class="countdown">
-      <h2>До нашего венчания осталось</h2>
+      <h2> До нашего венчания</h2>
       <div class="countdown-time">
-        <div class="countdown-item">
-          <span id="days" class="value">00</span>
-          <span class="label">дней</span>
-        </div>
-        <div class="countdown-item">
-          <span id="hours" class="value">00</span>
-          <span class="label">часов</span>
-        </div>
-        <div class="countdown-item">
-          <span id="minutes" class="value">00</span>
-          <span class="label">минут</span>
-        </div>
-        <div class="countdown-item">
-          <span id="seconds" class="value">00</span>
-          <span class="label">секунд</span>
-        </div>
+        <span id="days" class="value">00</span> <span>дней</span>・
+        <span id="hours" class="value">00</span> <span>часов</span>・
+        <span id="minutes" class="value">00</span> <span>минут</span>・
+        <span id="seconds" class="value">00</span> <span>секунд</span>
       </div>
       <div id="countdown-finished" class="countdown-finished"></div>
     </div>
@@ -316,34 +295,34 @@
       <ul class="event-list">
         <li>
           <span class="event-time">17 июля, 10:00</span>
-          <span class="event-title">Венчание</span>
-            <span class="event-title">храм РДЦ Николы Чудотворца, д. Ванькова</span>
+          <span class="event-time">💍 Венчание</span>
+          <span class="event-title">храм РДЦ Николы Чудотворца, д. Ванькова</span>
         </li>
         <li>
           <span class="event-time">17 июля, 17:00</span>
-          <span class="event-title">Вечерний пир</span>
-          <span class="event-title">д. Ванькова, ул. Новая, 14</span>
+          <span class="event-time">🍽️ Вечерний пир</span>
+          <span class="event-title">д. Ванькова, ул. Новая, 14</spa</span>
         </li>
       </ul>
     </div>
 
     <div class="form-section">
-      <h2>Пожалуйста, пройдите анкету</h2>
-      <p>Это поможет нам лучше подготовиться к вашему приходу.</p>
+      <h2>📝 Пожалуйста, пройдите анкету</h2>
+      <p>Это поможет нам лучше подготовиться к вашему приходу 💝</p>
       <a class="form-btn" href="https://forms.gle/rMv2GZYj23JVS7o56" target="_blank">
-        Заполнить анкету
+        ✍️ Заполнить анкету
       </a>
     </div>
 
     <div class="footer">
-      С любовью, Антон и Варвара ❤
+      С любовью, Антон и Варвара 💖
     </div>
   </div>
 
   <script>
-    // --- Цветы на фоне ---
+    // --- Плавающие цветочки ---
     const container = document.getElementById("flowers");
-    const count = 18;
+    const count = 16;
 
     for (let i = 0; i < count; i++) {
       const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -363,8 +342,8 @@
       container.appendChild(svg);
     }
 
-    // --- Обратный отсчёт до 19.07.2026, 12:00 (по местному времени браузера) ---
-    const targetDate = new Date("2026-07-17T12:00:00").getTime();
+    // --- Обратный отсчёт до 19.07.2026 12:00 ---
+    const targetDate = new Date("2026-07-17T10:00:00").getTime();
     const daysEl = document.getElementById("days");
     const hoursEl = document.getElementById("hours");
     const minutesEl = document.getElementById("minutes");
@@ -380,7 +359,7 @@
         hoursEl.style.display = "none";
         minutesEl.style.display = "none";
         secondsEl.style.display = "none";
-        finishedEl.textContent = "Венчание уже прошло! ♥";
+        finishedEl.textContent = "Венчание уже прошло! 💍";
         return;
       }
 
